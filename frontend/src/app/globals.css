@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #f8fafc;
+  --foreground: #09090b;
+
+  --card: #ffffff;
+  --card-foreground: #09090b;
+
+  --popover: #ffffff;
+  --popover-foreground: #09090b;
+
+  --primary: #4f46e5;
+  --primary-foreground: #ffffff;
+
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
+
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+
+  --accent: #f1f5f9;
+  --accent-foreground: #0f172a;
+
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #6366f1;
+  --radius: 0.75rem;
+
+  /* Medical app custom variables */
+  --surface-main: #ffffff;
+  --surface-header: #f8fafc;
+  --surface-chat: #ffffff;
+  --surface-input: #f8fafc;
+  --surface-input-border: #cbd5e1;
+  --surface-bubble-bot: #f1f5f9;
+  --surface-bubble-user: #4f46e5;
+  --notice-bg: #fffbeb;
+  --notice-border: #fde68a;
+  --notice-text: #b45309;
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #f5f5f7;
+
+  --card: #0b0b0d;
+  --card-foreground: #f5f5f7;
+
+  --popover: #0b0b0d;
+  --popover-foreground: #f5f5f7;
+
+  --primary: #6366f1;
+  --primary-foreground: #ffffff;
+
+  --secondary: #141417;
+  --secondary-foreground: #f5f5f7;
+
+  --muted: #141417;
+  --muted-foreground: #a1a1aa;
+
+  --accent: #202026;
+  --accent-foreground: #f5f5f7;
+
+  --destructive: #7f1d1d;
+  --destructive-foreground: #fca5a5;
+
+  --border: #29292f;
+  --input: #29292f;
+  --ring: #6366f1;
+
+  /* Medical app custom variables */
+  --surface-main: #0b0b0d;
+  --surface-header: #08080a;
+  --surface-chat: #0b0b0d;
+  --surface-input: #141417;
+  --surface-input-border: #29292f;
+  --surface-bubble-bot: #141417;
+  --surface-bubble-user: #4f46e5;
+  --notice-bg: #201a10;
+  --notice-border: #39301c;
+  --notice-text: #fbbf24;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 150, 150, 0.4);
+}
